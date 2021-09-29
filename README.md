@@ -24,3 +24,26 @@ insert into GAMES values('FIFA', 'esportes', 2017);
 
 select nome,genero,ano from GAMES;
 
+/////////////////////////////////////////////////////////////////////////////////
+
+create table separar(xxx varchar(50));
+insert into separar values("-------------------------------");
+select * from separar;
+create table calc(x int, y int);
+insert into calc values (10, 25);
+select x,y,(x+y) from calc;
+
+select * from separar;
+
+create table SERIES(nome varchar(100),genero varchar(100),ano int);
+insert into SERIES values('BROKYLLYN NINE NINE', 'COMEDIA', 2013);
+select nome,genero,ano from series;
+
+select * from separar;
+
+create table ANIMAIS(especie varchar(100));
+insert into ANIMAIS values('macaco');
+insert into ANIMAIS values('cachorro');
+insert into ANIMAIS values('gato');
+select especie from ANIMAIS;
+
