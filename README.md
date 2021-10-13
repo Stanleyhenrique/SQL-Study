@@ -72,4 +72,13 @@ select cod,nome,duracao,genero,disponivel from filme;
 insert into separar values("----------------------");
 SELECT * from separar;
 
+create table filme(cod varchar(50), nome varchar(50), duracao varchar(50), genero varchar(50), disponivel bit not null );
+insert into filme values("001","hulk", "01:40", "ação", 1);
+insert into filme values("002", "Os Vingadores", "02:30", "ação", 1);
+insert into filme values("003", "Pantera cor de rosa", "01:30", "comédia", 0);
+insert into filme values("004", "Os trapalhões", "01:30", "comédia", 0);
+insert into filme values("005", "A vila", "01:30", "terror", 1);
+
+SELECT * FROM filme WHERE disponivel = "1";
+
 
